@@ -35,35 +35,19 @@ export default class App extends React.Component {
      <View style={styles.NavItem}>
      
      <Pressable onPress={() => this.changeText('Favourites')}android_ripple={{borderless:true,radius:50}}>
-     <Image source={{
-          uri: 'asset:/one.png',
-        }}
-        style={{ width: 40, height: 40,backgroundColor:'#000' }}
-        ></Image>
+     <Image style={styles.IconBehave} source={require('./assets/one.png')} />
      </Pressable>
      
      <Pressable onPress={() => this.changeText('Likes')} android_ripple={{borderless:true,radius:50}}>
-     <Image source={{
-          uri: 'asset:/one.png',
-        }}
-        style={{ width: 40, height: 40,backgroundColor:'#E3DF02' }}
-        ></Image>
+     <Image style={styles.IconBehave} source={require('./assets/one.png')} />
      </Pressable>
 
      <Pressable onPress={() => this.changeText('Chats')}  android_ripple={{borderless:true,radius:50}}>
-     <Image source={{
-          uri: 'asset:/one.png',
-        }}
-        style={{ width: 40, height: 40,backgroundColor:'#990099' }}
-        ></Image>
+     <Image style={styles.IconBehave} source={require('./assets/one.png')} />
      </Pressable>
 
      <Pressable onPress={() => this.changeText('Settings')} android_ripple={{borderless:true,radius:50}}>
-     <Image source={{
-          uri: 'asset:/one.png',
-        }}
-        style={{ width: 40, height: 40,backgroundColor:'#E3DF02' }}
-        ></Image>
+     <Image style={styles.IconBehave} source={require('./assets/one.png')} />
      </Pressable>
 
      </View>
@@ -96,8 +80,9 @@ const styles = StyleSheet.create({
     backgroundColor:'#eee',
     width:'90%',
     justifyContent: 'space-evenly',
-    borderRadius:40
+    borderRadius:40,
+    padding:5
   },IconBehave:{
-    padding:14
+    padding:14,width: 30, height: 30
   }
 });
